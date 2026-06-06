@@ -7,7 +7,9 @@ public class UserService {
     }
 
     public boolean login(String username, String password) {
-        // TODO: 实现登录逻辑
+        if (username.equals("admin") && password.equals("123456")) {
+            return true;
+        }
         return false;
     }
     
